@@ -1,21 +1,31 @@
-import './bootstrap';
-import '../css/app.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
+import Main from "./Main";
+import "./bootstrap";
+import "../css/app.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ThemeProvider } from "@/Components/theme-provider";
 
-import { createRoot } from 'react-dom/client';
-import { createInertiaApp } from '@inertiajs/react';
-import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+const queryClient = new QueryClient();
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
-
-createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
-    resolve: (name) => resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
-    setup({ el, App, props }) {
-        const root = createRoot(el);
-
-        root.render(<App {...props} />);
-    },
-    progress: {
-        color: '#4B5563',
-    },
-});
+const rootElement = document.getElementById("root");
+if (rootElement) {
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(
+        <React.StrictMode>
+            <QueryClientProvider client={queryClient}>
+                <Router>
+                    <ThemeProvider
+                        defaultTheme="light"
+                        storageKey="vite-ui-theme"
+                    >
+                        <Main />
+                    </ThemeProvider>
+                </Router>
+            </QueryClientProvider>
+        </React.StrictMode>
+    );
+} else {
+    console.error("Root element not found");
+}
