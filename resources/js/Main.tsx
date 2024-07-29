@@ -7,6 +7,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import ProtectedRoute from "@/Components/ProtectedRoute";
 import Dashboard from "@/Pages/Dashboard";
 import GuestRoute from "@/Components/GuestRoute";
+import Theme from "./Themes";
 
 const App: React.FC = () => {
     return (
