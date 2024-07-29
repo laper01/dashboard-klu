@@ -13,6 +13,7 @@ const App: React.FC = () => {
         <AuthProvider>
             <Routes>
                 <Route path="/" element= {<GuestRoute element={ <Login canResetPassword={false} />}  /> } />
+                <Route path="/dashboard" element={<ProtectedRoute element={<Dashboard />} />} />
             </Routes>
         </AuthProvider>
     );

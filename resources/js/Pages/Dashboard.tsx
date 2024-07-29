@@ -6,8 +6,7 @@ import ChangePassword from './Dashboard/ChangePassword';
 const App: React.FC = () => {
 
   return (
-    <Theme title='Ubah password user mahasiswa UMMAT'>
-        <ChangePassword/>
+    <Theme title='Dashboard Surat KLU'>
     </Theme>
   );
 };

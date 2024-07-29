@@ -37,7 +37,7 @@ export const useLogin = ():UseLoginResult => {
         },
         onSuccess: (data) => {
             login(data.access_token, data.user)
-            navigate("/ubah-password");
+            navigate("/dashboard");
 
         },
         onError: (error) => {
