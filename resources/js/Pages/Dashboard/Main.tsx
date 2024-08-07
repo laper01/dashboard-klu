@@ -41,7 +41,6 @@ const Main: React.FC = () => {
                             <div className="w-64">
                             Kategori Pendataan
                             </div>
-
                             <div className="w-full">
                                 <Select>
                                     <SelectTrigger className="w-full">
