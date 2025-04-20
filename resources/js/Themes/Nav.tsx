@@ -13,7 +13,7 @@ import {
     Users,
 } from "lucide-react";
 
-import { Badge } from "@/Components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import { NavLink } from "react-router-dom";
 
 export default function Nav() {

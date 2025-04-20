@@ -14,16 +14,16 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/Components/ui/avatar"
-import { Badge } from "@/Components/ui/badge"
-import { Button } from "@/Components/ui/button"
+} from "@/components/ui/avatar"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/Components/ui/card"
+} from "@/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,9 +31,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/Components/ui/dropdown-menu"
-import { Input } from "@/Components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/Components/ui/sheet"
+} from "@/components/ui/dropdown-menu"
+import { Input } from "@/components/ui/input"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import {
   Table,
   TableBody,
@@ -41,7 +41,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/Components/ui/table"
+} from "@/components/ui/table"
 import { Link } from "react-router-dom"
 import Nav from "./Nav"
 import Header from "./Header"

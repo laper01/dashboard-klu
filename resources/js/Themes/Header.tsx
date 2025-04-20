@@ -12,15 +12,15 @@ import {
     Wifi
   } from "lucide-react"
 
-  import { Badge } from "@/Components/ui/badge"
-  import { Button } from "@/Components/ui/button"
+  import { Badge } from "@/components/ui/badge"
+  import { Button } from "@/components/ui/button"
   import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-  } from "@/Components/ui/card"
+  } from "@/components/ui/card"
   import {
     DropdownMenu,
     DropdownMenuContent,
@@ -28,9 +28,9 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-  } from "@/Components/ui/dropdown-menu"
-  import { Input } from "@/Components/ui/input"
-  import { Sheet, SheetContent, SheetTrigger } from "@/Components/ui/sheet"
+  } from "@/components/ui/dropdown-menu"
+  import { Input } from "@/components/ui/input"
+  import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
   import { Link, NavLink } from "react-router-dom"
 import Nav from "./Nav"
 

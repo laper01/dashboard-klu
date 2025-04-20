@@ -1,13 +1,13 @@
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/Components/ui/select";
-import { Progress } from "@/Components/ui/progress";
+} from "@/components/ui/select";
+import { Progress } from "@/components/ui/progress";
 import { User, BarChart2, MapPin } from "lucide-react";
 import AllCivilian from "./chart/AllCivilian";
 import NavChart from "./NavChart";

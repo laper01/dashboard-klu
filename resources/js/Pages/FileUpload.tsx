@@ -1,9 +1,9 @@
 import React, { useState, ChangeEvent } from "react";
 import axios from "axios";
-import { Input } from "@/Components/ui/input";
-import { Progress } from "@/Components/ui/progress";
-import { Button } from "@/Components/ui/button";
-import { useToast } from "@/Components/ui/use-toast";
+import { Input } from "@/components/ui/input";
+import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button";
+import { useToast } from "@/components/ui/use-toast";
 import Theme from "@/Themes";
 import { useAuth } from "@/context/AuthContext";
 

@@ -1,16 +1,16 @@
 import { useEffect, FormEventHandler, useMemo } from "react";
-import Checkbox from "@/Components/Checkbox";
+import Checkbox from "@/components/Checkbox";
 import GuestLayout from "@/Layouts/GuestLayout";
-import InputError from "@/Components/InputError";
-import InputLabel from "@/Components/InputLabel";
-import PrimaryButton from "@/Components/PrimaryButton";
-import TextInput from "@/Components/TextInput";
+import InputError from "@/components/InputError";
+import InputLabel from "@/components/InputLabel";
+import PrimaryButton from "@/components/PrimaryButton";
+import TextInput from "@/components/TextInput";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LoginFormInputs, loginSchema } from "@/Utils/validationSchema";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useLogin } from "@/hooks/authHooks";
-import { Button } from "@/Components/ui/button";
-import { Input } from "@/Components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function Login({
     status,

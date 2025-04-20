@@ -16,7 +16,7 @@ import {
     Users,
 } from "lucide-react";
 
-import { Button } from "@/Components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -30,7 +30,7 @@ import {
     DropdownMenuSubContent,
     DropdownMenuSubTrigger,
     DropdownMenuTrigger,
-} from "@/Components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 
 export default function NavChart() {
     return (
